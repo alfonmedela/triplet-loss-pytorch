@@ -1,6 +1,6 @@
 from fastai.vision import *
 import torch
-from triplet_loss import TripletLoss
+from loss_functions.triplet_loss import TripletLoss
 
 class L2_norm(nn.Module):
     def __init__(self):
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     learn.model[1] = nn.Sequential(layers[0], layers[1], layers[2], layers[3], layers[4], L2_norm()).to(device)
     print(learn.model)
 
-    # use triplet loss
+    # use triplet loss_functions
     learn.loss_func = TripletLoss(device)
 
 

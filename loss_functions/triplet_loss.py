@@ -37,8 +37,8 @@ def pairwise_distance_torch(embeddings, device):
     return pairwise_distances
 
 def TripletSemiHardLoss(y_true, y_pred, device, margin=1.0):
-    """Computes the triplet loss with semi-hard negative mining.
-       The loss encourages the positive distances (between a pair of embeddings
+    """Computes the triplet loss_functions with semi-hard negative mining.
+       The loss_functions encourages the positive distances (between a pair of embeddings
        with the same labels) to be smaller than the minimum negative distance
        among which are at least greater than the positive distance plus the
        margin constant (called semi-hard negative) in the mini-batch.
@@ -48,7 +48,7 @@ def TripletSemiHardLoss(y_true, y_pred, device, margin=1.0):
        [batch_size] of multi-class integer labels. And embeddings `y_pred` must be
        2-D float `Tensor` of l2 normalized embedding vectors.
        Args:
-         margin: Float, margin term in the loss definition. Default value is 1.0.
+         margin: Float, margin term in the loss_functions definition. Default value is 1.0.
          name: Optional name for the op.
        """
 
