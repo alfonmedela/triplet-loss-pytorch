@@ -11,3 +11,4 @@ The CNN architecture we use with triplet loss needs to be cut off before the cla
 
 ## TBD
 Soon I will include an example with MNIST in the "main_train.py"
+It is not tested yet
