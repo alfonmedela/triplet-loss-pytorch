@@ -52,16 +52,22 @@ if __name__ == '__main__':
     # learn.fit_one_cycle(10, slice(lr))
     # learn.save('stage1_weights')
 
-    learn.load('stage1_weights')
-    learn.unfreeze()
+    # learn.load('stage1_weights')
+    # learn.unfreeze()
 
     # learn.lr_find()
     # fig = learn.recorder.plot(return_fig=True)
     # fig.savefig('lr_figure_unfreezed.png')
 
+    # lr = 1e-4
+    # learn.fit_one_cycle(10, slice(lr))
+    # learn.save('stage2_weights')
+
+    learn.load('stage2_weights')
+    learn.unfreeze()
     lr = 1e-4
     learn.fit_one_cycle(10, slice(lr))
-    learn.save('stage2_weights')
+    learn.save('stage3_weights')
 
 
 
