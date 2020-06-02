@@ -14,4 +14,7 @@ I tested the triplet loss on the MNIST dataset. We can't compare directly to TF 
 
 ### Phase 1
 
+![freezed](https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/freezed.PNG)
+
 ### Phase 2
+![unfreezed](https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/unfreezed.PNG)
