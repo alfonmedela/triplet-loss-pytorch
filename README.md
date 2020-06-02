@@ -9,6 +9,9 @@ The CNN architecture we use with triplet loss needs to be cut off before the cla
 <br/><br/>
 <img src="https://user-images.githubusercontent.com/18154355/61485417-1cbb1f00-a96f-11e9-8d6a-94964ce8c4db.png" width="406" height="158" />
 
-## TBD
-Soon I will include an example with MNIST in the "main_train.py"
-It is not tested yet
+## Results on MNIST
+I tested the triplet loss on the MNIST dataset. We can't compare directly to TF addons as I didn't run the experiment but this could be interesting from the point of view of performance. Here are the training logs if you want to compare results:
+
+### Phase 1
+
+### Phase 2
