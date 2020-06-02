@@ -14,9 +14,11 @@ I tested the triplet loss on the MNIST dataset. We can't compare directly to TF 
 
 ### Phase 1 
 First we train last layer and batch normalization layers, getting close to 0.079 validation loss.
+<br/><br/>
 <img src="https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/freezed.PNG" width="400" height="200" />
 
 ### Phase 2
 Finally, unfreezing all the layers it is possible to get close to 0.05 with enough training and hyperparmeter tuning.
+<br/><br/>
 <img src="https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/unfreezed.PNG" width="400" height="200" />
 
