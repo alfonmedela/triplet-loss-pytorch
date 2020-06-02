@@ -26,8 +26,8 @@ def pairwise_distance_torch(embeddings, device):
     pairwise_distances_squared = torch.max(pairwise_distances_squared, torch.tensor([0.]).to(device))
     # Get the mask where the zero distances are at.
     error_mask = pairwise_distances_squared.clone()
-    error_mask[error_mask != 0.0] = 1.
-    error_mask[error_mask == 0.0] = 0.
+    error_mask[error_mask > 0.0] = 1.
+    error_mask[error_mask <= 0.0] = 0.
 
     pairwise_distances = torch.mul(pairwise_distances_squared, error_mask)
 
