@@ -48,20 +48,20 @@ if __name__ == '__main__':
     # fig = learn.recorder.plot(return_fig=True)
     # fig.savefig('lr_figure.png')
 
-    lr = 5e-2
-    learn.fit_one_cycle(10, slice(lr))
-    learn.save('stage1_weights')
+    # lr = 5e-2
+    # learn.fit_one_cycle(10, slice(lr))
+    # learn.save('stage1_weights')
 
-    # learn.load('stage1_weights_TRIALS')
-    # learn.unfreeze()
+    learn.load('stage1_weights')
+    learn.unfreeze()
 
     # learn.lr_find()
     # fig = learn.recorder.plot(return_fig=True)
-    # fig.savefig('lr_figure.png')
+    # fig.savefig('lr_figure_unfreezed.png')
 
-    # lr = 1e-4
-    # learn.fit_one_cycle(10, slice(lr))
-    # learn.save('stage2_weights_TRIALS')
+    lr = 1e-4
+    learn.fit_one_cycle(10, slice(lr))
+    learn.save('stage2_weights')
 
 
 
