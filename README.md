@@ -12,10 +12,11 @@ The CNN architecture we use with triplet loss needs to be cut off before the cla
 ## Results on MNIST
 I tested the triplet loss on the MNIST dataset. We can't compare directly to TF addons as I didn't run the experiment but this could be interesting from the point of view of performance. Here are the training logs if you want to compare results. Accuracy is not relevant and shouldn't be there as we are not training a classification model.
 
-### Phase 1
-
+### Phase 1 
+First we train last layer and batch normalization layers, getting close to 0.079 validation loss.
 <img src="https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/freezed.PNG" width="400" height="200" />
 
 ### Phase 2
+Finally, unfreezing all the layers it is possible to get close to 0.05 with enough training and hyperparmeter tuning.
 <img src="https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/unfreezed.PNG" width="400" height="200" />
 
