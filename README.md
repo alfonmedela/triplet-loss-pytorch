@@ -24,3 +24,5 @@ Finally, unfreezing all the layers it is possible to get close to 0.05 with enou
 
 ### Test
 In order to test, there are two interesting options, training a classification model on top of the embeddings and plotting the train and test embeddings to see if same categories cluster together.
+
+![TSNE](https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/tsne_val.png)
