@@ -27,4 +27,4 @@ In order to test, there are two interesting options, training a classification m
 
 ![TSNE](https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/tsne_val.png)
 
-We get an accuracy around **99.3%** on validation by training a Linear SVM or a simple kNN. This repository is not focused on maximizing this accuracy by tweaking data augmentation, arquitecture and hyperparameters but to provide an effective implementation of triplet loss in torch. For more info on the state-of-the-art results on MNIST check out this amazing [kaggle discussion](https://www.kaggle.com/c/digit-recognizer/discussion/61480)
+We get an accuracy around **99.3%** on validation by training a Linear SVM or a simple kNN. This repository is not focused on maximizing this accuracy by tweaking data augmentation, arquitecture and hyperparameters but on providing an effective implementation of triplet loss in torch. For more info on the state-of-the-art results on MNIST check out this amazing [kaggle discussion](https://www.kaggle.com/c/digit-recognizer/discussion/61480)
