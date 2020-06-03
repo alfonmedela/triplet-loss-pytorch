@@ -26,3 +26,5 @@ Finally, unfreezing all the layers it is possible to get close to 0.05 with enou
 In order to test, there are two interesting options, training a classification model on top of the embeddings and plotting the train and test embeddings to see if same categories cluster together. The following figure contains the original 10,000 validation samples.
 
 ![TSNE](https://github.com/alfonmedela/TripletSemiHardLoss-PyTorch/blob/master/figures/tsne_val.png)
+
+We get an accuracy around **99.3%** on validation by training a Linear SVM or a simple kNN. This repository is not focused on maximizing this accuracy by tweaking data augmentation, arquitecture and hyperparameters but to provide an effective implementation of triplet loss in torch. For more info on the state-of-the-art results on MNIST check out this amazing [kaggle discussion](https://www.kaggle.com/c/digit-recognizer/discussion/61480)
