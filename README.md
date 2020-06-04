@@ -1,6 +1,9 @@
 # Triplet SemiHardLoss
 PyTorch semi hard [triplet loss](https://arxiv.org/pdf/1503.03832.pdf). Based on tensorflow addons version that can be found [here](https://www.tensorflow.org/addons/tutorials/losses_triplet). There is no need to create a siamese architecture with this implementation, it is as simple as following *main_train_triplet.py* cnn creation process!
 
+**WARNING**
+If you're using fastai library, it will return an error when predicting the embeddings with learn.predict. It internally knows that your data has N classes and if the embedding vector has M dimensions, beeing M>N, and the predicted highest value is larger than N, that class does not exist and returns an error. So either create your prediction function or make a simple modification of the source code that will modify self.classes list length.
+
 The triplet loss is a great choice for classification problems with *N_CLASSES >> N_SAMPLES_PER_CLASS*. For example, face recognition problems. 
 <br/><br/>
 <img src="https://user-images.githubusercontent.com/18154355/61485418-1cbb1f00-a96f-11e9-8de8-3c46eef5a7dc.png" width="400" height="178" />
@@ -29,7 +32,7 @@ In order to test, there are two interesting options, training a classification m
 
 We get an accuracy around **99.3%** on validation by training a Linear SVM or a simple kNN. This repository is not focused on maximizing this accuracy by tweaking data augmentation, arquitecture and hyperparameters but on providing an effective implementation of triplet loss in torch. For more info on the state-of-the-art results on MNIST check out this amazing [kaggle discussion](https://www.kaggle.com/c/digit-recognizer/discussion/61480).
 
-Contact me for any doubt:
+Contact me with any question:
 alfonmedela@gmail.com | 
 [alfonsomedela.com](http://alfonsomedela.com/)
 
