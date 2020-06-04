@@ -30,7 +30,9 @@ In order to test, there are two interesting options, training a classification m
 We get an accuracy around **99.3%** on validation by training a Linear SVM or a simple kNN. This repository is not focused on maximizing this accuracy by tweaking data augmentation, arquitecture and hyperparameters but on providing an effective implementation of triplet loss in torch. For more info on the state-of-the-art results on MNIST check out this amazing [kaggle discussion](https://www.kaggle.com/c/digit-recognizer/discussion/61480).
 
 Contact me for any doubt:
+<br/><br/>
 alfonmedela@gmail.com
+<br/><br/>
 [alfonsomedela.com](http://alfonsomedela.com/)
 
 ENJOY IT! 
