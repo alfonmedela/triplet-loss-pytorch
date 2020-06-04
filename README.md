@@ -35,5 +35,5 @@ alfonmedela@gmail.com |
 
 ENJOY IT! 
 
-####**WARNING**
+#### **WARNING**
 If you're using fastai library, it will return an error when predicting the embeddings with learn.predict. It internally knows that your data has N classes and if the embedding vector has M dimensions, beeing M>N, and the predicted highest value is larger than N, that class does not exist and returns an error. So either create your prediction function or make a simple modification of the source code that will modify self.classes list length.
