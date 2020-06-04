@@ -1,5 +1,5 @@
 # Triplet SemiHardLoss
-PyTorch semi hard [triplet loss](https://arxiv.org/pdf/1503.03832.pdf). Based on tensorflow addons version that can be found [here](https://www.tensorflow.org/addons/tutorials/losses_triplet). There is no need to create a siamese architecture with this implementation, it is as simple as following *main_train.py* cnn creation process!
+PyTorch semi hard [triplet loss](https://arxiv.org/pdf/1503.03832.pdf). Based on tensorflow addons version that can be found [here](https://www.tensorflow.org/addons/tutorials/losses_triplet). There is no need to create a siamese architecture with this implementation, it is as simple as following *main_train_triplet.py* cnn creation process!
 
 The triplet loss is a great choice for classification problems with *N_CLASSES >> N_SAMPLES_PER_CLASS*. For example, face recognition problems. 
 <br/><br/>
