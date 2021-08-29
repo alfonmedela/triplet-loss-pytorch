@@ -23,7 +23,7 @@ if __name__ == '__main__':
     bs = 128
     sz = 28
     tfms = get_transforms()
-    path = '/mnt/RAID5/users/alfonsomedela/projects/triplet-loss-torch/mnist_data/dataset/'
+    path = '/mnist_dataset/'
 
     valid_names = np.load('mnist_data/val_names.npy')
     data = (ImageList.from_folder(path)
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     layers = learn.model[1]
     learn.model[1] = nn.Sequential(layers[0], layers[1], layers[2], layers[3],
                                    nn.Linear(in_features=1024, out_features=128, bias=False), L2_norm()).to(device)
-    learn.model_dir = '/home/alfonsomedela/projects/triplet-loss-torch/results/models/'
+    learn.model_dir = '/models/'
 
     #triplet loss
     learn.loss_func = TripletLoss(device)
@@ -51,7 +51,6 @@ if __name__ == '__main__':
 
 
     # load data
-    path = '/mnt/RAID5/users/alfonsomedela/projects/triplet-loss-torch/mnist_data/dataset/'
     folders = glob.glob(path + '*')
 
     valid_names = np.load('mnist_data/val_names.npy')
