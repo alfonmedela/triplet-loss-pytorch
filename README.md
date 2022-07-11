@@ -33,7 +33,7 @@ Contact me with any question:
 alfonso@alfonsomedela.com | 
 [alfonsomedela.com](http://alfonsomedela.com/)
 
-# Supoort my latest TEDx talk
+# Support my latest TEDx talk
 [![Foo](https://alfonsomedela.com/wp-content/uploads/2022/04/MG_1233-scaled.jpg?id=2969)](https://www.youtube.com/watch?v=C2rTyASeaYg&t=9s)
 
 
