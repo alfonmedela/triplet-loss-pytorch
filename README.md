@@ -33,7 +33,7 @@ Contact me with any question:
 alfonso@alfonsomedela.com | 
 [alfonsomedela.com](http://alfonsomedela.com/)
 
-# Watch my latest TEDx talk: The medicine of the future
+# Watch my latest TEDx talk: [The medicine of the future](https://www.youtube.com/watch?v=C2rTyASeaYg&t=9s)
 [![Foo](https://alfonsomedela.com/wp-content/uploads/2022/04/MG_1233-scaled.jpg?id=2969)](https://www.youtube.com/watch?v=C2rTyASeaYg&t=9s)
 
 
